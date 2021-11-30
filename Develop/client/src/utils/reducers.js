@@ -1,4 +1,3 @@
-
 import {
   UPDATE_PRODUCTS,
   ADD_TO_CART,
@@ -10,6 +9,7 @@ import {
   CLEAR_CART,
   TOGGLE_CART,
 } from './actions';
+
 const initialState = {
     products: [],
     cart: [],
@@ -17,6 +17,7 @@ const initialState = {
     categories: [],
     currentCategory: '', 
 };
+
 // The reducer is a function that accepts the current state and an action. It returns a new state based on that action.
 const reducers = (state = initialState, action) => {
   switch (action.type) {
